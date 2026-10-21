@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c09">
+  <meta name="description" content="The black can. The green claw. Explore a scroll-driven Monster Energy experience and discover Original Green, Zero Sugar, and Ultra Paradise.">
+  <meta property="og:title" content="Monster — Unleash the Beast">
+  <meta property="og:description" content="Iconic flavor. Unmistakable energy. A Monster Energy concept by Devonix.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://devonixwebsolutions-lgtm.github.io/monster-energy-website/">
+  <title>Monster — Unleash the Beast</title>
+  <link rel="icon" href="assets/monster-logo.png" type="image/png">
+  <link rel="preload" href="assets/anton.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/original.png" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/gsap.min.js"></script>
+  <script defer src="assets/ScrollTrigger.min.js"></script>
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#flavors">Skip to flavors</a>
+  <div class="loader" id="loader" aria-hidden="true">
+    <span class="claw loader-claw"><img src="assets/monster-logo.png" alt="" width="802" height="363"></span>
+    <p>UNLEASHING THE BEAST</p><span class="loader-track"><span></span></span>
+  </div>
+
+  <header class="site-header" id="header">
+    <a class="brand" href="#origin" aria-label="Monster Energy, back to top">
+      <span class="claw"><img src="assets/monster-logo.png" alt="" width="802" height="363"></span>
+    </a>
+    <div class="header-note"><span class="status-dot"></span><span>ORIGINAL ENERGY.<br>UNCOMPROMISING FLAVOR.</span></div>
+    <div class="header-actions">
+      <button class="bag-button" id="bag-button" aria-label="Open my pack, 0 cans"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Zm3 0V6a4 4 0 0 1 8 0v2"/></svg><span id="bag-count">0</span></button>
+      <button class="menu-button" id="menu-button" aria-haspopup="dialog"><span>MENU</span><span class="menu-lines" aria-hidden="true"><i></i><i></i></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-scroll" id="origin" aria-label="Monster Energy Original, scroll to explore">
+      <div class="hero-sticky">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-intro">
+          <p class="micro hero-eyebrow">THE BLACK CAN. THE GREEN CLAW.</p>
+          <h1 class="hero-heading"><span class="hero-title-left">THE REAL</span><span class="hero-title-right">ENERGY IN<br>EVERY SIP.</span></h1>
+          <p class="hero-description">The original that started it all.<br>Legendary flavor. Unmistakable energy.</p>
+          <span class="intro-annotation">MEET THE ORIGINAL<svg viewBox="0 0 100 60" aria-hidden="true"><path d="M7 8C60-7 98 25 75 49m0 0 1-15m-1 15 15-5"/></svg></span>
+          <span class="beast-stamp">UNLEASH<br>THE BEAST</span>
+          <svg class="hero-scratch" viewBox="0 0 140 300" aria-hidden="true"><path d="m30 8 19 32-12 55 9 20-21 164 4-93-12-26 16-99-11-21Zm46-5 17 28-13 75 9 23-20 163-4-54 10-94-15-34 18-57-14-24Zm46 14 12 27-18 90 8 24-27 128 6-88-3-37 19-87-8-23Z"/></svg>
+        </div>
+
+        <div class="can-stage" id="can-stage" role="img" aria-label="A rotating black and green Monster Energy can">
+          <img class="can-fallback" id="can-fallback" src="assets/original.png" alt="" width="250" height="625" fetchpriority="high">
+          <div class="can-shadow" aria-hidden="true"></div>
+        </div>
+
+        <div class="fact-orbit" aria-label="Original Green product facts">
+          <div class="fact-coin coin-caffeine"><span class="coin-small">PER 16 FL OZ</span><strong>160<span>MG</span></strong><span>CAFFEINE</span></div>
+          <div class="fact-coin coin-size"><span class="coin-small">CRACK ONE OPEN</span><strong>16<span>OZ</span></strong><span>THE ICONIC CAN</span></div>
+          <div class="fact-coin coin-original"><span class="coin-small">ORIGINAL GREEN</span><strong>OG</strong><span>CLASSIC MONSTER</span></div>
+        </div>
+
+        <div class="hero-product">
+          <div class="hero-product-copy"><p class="micro">MONSTER ENERGY / 01</p><h2 class="display">ORIGINAL<br><em>GREEN.</em></h2><p>A classic sweet and salty flavor.<br>That familiar black and green can.<br>This is the original Monster.</p><button class="text-link" data-product="original">MEET THE OG <span>↗</span></button></div>
+          <p class="product-side-note">ONE ICON.<br>THREE WAYS<br>TO UNLEASH.</p>
+        </div>
+        <p class="keep-going display" aria-hidden="true">KEEP GOING.</p>
+        <div class="hero-bottom">
+          <div class="stage-meter"><div class="stage-labels"><span id="stage-label">THE ORIGINAL</span><span id="stage-number">001</span></div><div class="stage-track"><span id="stage-fill"></span></div></div>
+          <a class="scroll-cue" href="#flavors"><span>SCROLL TO UNLEASH</span><span class="cue-arrow">↓</span></a>
+          <span class="hero-bottom-note">MONSTER ENERGY<br>ORIGINAL GREEN · 16 FL OZ</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="green-world" id="flavors">
+      <svg class="scallop scallop-top" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true"><path d="M0 130A90 120 0 0 1 180 130A90 120 0 0 1 360 130A90 120 0 0 1 540 130A90 120 0 0 1 720 130A90 120 0 0 1 900 130A90 120 0 0 1 1080 130A90 120 0 0 1 1260 130A90 120 0 0 1 1440 130V150H0Z"/></svg>
+      <div class="manifesto">
+        <span class="chapter micro">01 / UNMISTAKABLY MONSTER</span>
+        <span class="manifesto-coin"><span>BLACK CAN</span><b>100%</b><span>MONSTER</span></span>
+        <svg class="outline-can can-doodle-left" viewBox="0 0 160 260" aria-hidden="true"><ellipse cx="80" cy="25" rx="48" ry="13"/><path d="M32 25v210c0 18 96 18 96 0V25m-95 22c18 17 77 17 95 0m-95 168c18 17 77 17 95 0M64 84l10 26-12 68m26-94 10 26-13 75m22-99 9 23-12 61"/><ellipse cx="80" cy="25" rx="15" ry="6"/></svg>
+        <svg class="outline-can can-doodle-right" viewBox="0 0 160 260" aria-hidden="true"><ellipse cx="80" cy="25" rx="48" ry="13"/><path d="M32 25v210c0 18 96 18 96 0V25m-95 22c18 17 77 17 95 0m-95 168c18 17 77 17 95 0M64 84l10 26-12 68m26-94 10 26-13 75m22-99 9 23-12 61"/><ellipse cx="80" cy="25" rx="15" ry="6"/></svg>
+        <h2 class="manifesto-title display"><span class="line-mask"><span>ICONIC FLAVOR.</span></span><span class="line-mask"><span>UNMISTAKABLE ENERGY.</span></span><span class="line-mask"><span>THAT BLACK CAN.</span></span><span class="line-mask"><span>THAT <mark>GREEN CLAW.</mark></span></span></h2>
+        <p class="manifesto-caption">You know it when you see it.<br>You know it when you taste it.</p>
+        <span class="hand-note">Nothing quite like it.<svg viewBox="0 0 110 70" aria-hidden="true"><path d="M105 5C66 50 15 21 20 58m0 0-13-8m13 8 9-13"/></svg></span>
+      </div>
+
+      <div class="flavor-collection">
+        <div class="collection-heading"><h2 class="display">EXPLORE ALL</h2><span class="collection-star" aria-hidden="true">✳</span><span class="display">FLAVORS.</span></div>
+        <div class="flavor-grid">
+          <button class="flavor-card flavor-original" data-product="original" aria-label="Explore Monster Energy Original Green">
+            <span class="card-meta"><span>THE ORIGINAL</span><span>01 / 03</span></span><span class="card-title display">ORIGINAL<br>GREEN.</span>
+            <span class="card-can-wrap"><img src="assets/original.png" alt="Monster Energy Original Green can" width="250" height="625" loading="lazy"></span>
+            <span class="card-bottom"><span>CLASSIC MONSTER FLAVOR<br><small>160 MG CAFFEINE / 16 FL OZ</small></span><span class="card-plus" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="flavor-card flavor-zero" data-product="zero" aria-label="Explore Monster Energy Zero Sugar">
+            <span class="card-meta"><span>ALL MONSTER. ZERO SUGAR.</span><span>02 / 03</span></span><span class="card-title display">ZERO<br>SUGAR.</span>
+            <span class="card-can-wrap"><img src="assets/zero-sugar.png" alt="Monster Energy Zero Sugar can" width="250" height="625" loading="lazy"></span>
+            <span class="card-bottom"><span>THE OG TASTE. ZERO SUGAR.<br><small>160 MG CAFFEINE / 16 FL OZ</small></span><span class="card-plus" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="flavor-card flavor-ultra" data-product="ultra" aria-label="Explore Monster Ultra Paradise">
+            <span class="card-meta"><span>A DIFFERENT KIND OF WILD</span><span>03 / 03</span></span><span class="card-title display">ULTRA<br>PARADISE.</span>
+            <span class="card-can-wrap"><img src="assets/ultra-paradise.png" alt="Monster Ultra Paradise green can" width="250" height="625" loading="lazy"></span>
+            <span class="card-bottom"><span>KIWI. APPLE. A HINT OF LIME.<br><small>150 MG CAFFEINE / 16 FL OZ</small></span><span class="card-plus" aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+        <div class="collection-foot micro"><span>FIND YOUR KIND OF MONSTER.</span><span>PRODUCT FACTS BASED ON U.S. 16 FL OZ CANS.</span></div>
+      </div>
+      <svg class="scallop scallop-bottom" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true"><path d="M0 130A90 120 0 0 1 180 130A90 120 0 0 1 360 130A90 120 0 0 1 540 130A90 120 0 0 1 720 130A90 120 0 0 1 900 130A90 120 0 0 1 1080 130A90 120 0 0 1 1260 130A90 120 0 0 1 1440 130V150H0Z"/></svg>
+    </section>
+
+    <section class="world-scroll" id="world">
+      <div class="world-sticky">
+        <span class="chapter micro">02 / LIFE OUTSIDE THE LINES</span>
+        <h2 class="world-title display">YOU WERE MADE<br>FOR <em>MORE.</em></h2>
+        <div class="photo-stack">
+          <figure class="photo-card photo-one"><img src="assets/moto.png" alt="Motocross riders taking on a dirt track" width="488" height="325" loading="lazy"><figcaption><span>01 / TWO WHEELS. NO LIMITS.</span><span>↗</span></figcaption></figure>
+          <figure class="photo-card photo-two"><img src="assets/skate.png" alt="Monster Energy skateboarder at a street skateboarding event" width="977" height="651" loading="lazy"><figcaption><span>02 / CONCRETE IS A CANVAS.</span><span>↗</span></figcaption></figure>
+          <figure class="photo-card photo-three"><img src="assets/moto-action.png" alt="A motocross rider jumping in front of a crowd" width="488" height="325" loading="lazy"><figcaption><span>03 / TAKE THE NEXT LEAP.</span><span>↗</span></figcaption></figure>
+        </div>
+        <div class="world-copy"><p>From the concrete to the dirt.<br>A world that never slows down.</p><a class="text-link" href="https://www.monsterenergy.com/en-us/" target="_blank" rel="noopener">ENTER MONSTER WORLD <span>↗</span></a></div>
+        <span class="world-stamp">GO ALL IN.<br>STAY MONSTER.</span>
+      </div>
+    </section>
+
+    <section class="beast-pack" id="pack">
+      <div class="character-grid">
+        <div class="character-card reveal"><span class="character-icon">✳</span><h3 class="display">THE ICON.</h3><p>Black can. Green claw.<br>Original Monster flavor.</p><span class="corner corner-one"></span><span class="corner corner-two"></span></div>
+        <div class="character-card reveal"><span class="character-icon zero-icon">0</span><h3 class="display">ZERO SUGAR.</h3><p>Your familiar OG flavor.<br>Without the sugar.</p><span class="corner corner-one"></span><span class="corner corner-two"></span></div>
+        <div class="character-card reveal"><span class="character-icon">↗</span><h3 class="display">GO PARADISE.</h3><p>Kiwi and apple meet<br>cucumber and lime.</p><span class="corner corner-one"></span><span class="corner corner-two"></span></div>
+      </div>
+      <div class="pack-grid">
+        <div class="pack-copy reveal"><span class="micro">YOUR NEXT FAVORITE STARTS HERE.</span><h2 class="display">THE BOX<br>OF <em>BEAST.</em></h2><p>One original. A zero sugar icon.<br>A little paradise. Pick your favorite,<br>or make room for all three.</p><div class="pack-links"><a class="pill-button" href="https://www.monsterenergy.com/en-us/where-to-buy/" target="_blank" rel="noopener">FIND NEAR ME <span>↗</span></a><a class="pill-button outline" href="#flavors">EXPLORE FLAVORS <span>↑</span></a></div><span class="pack-copy-bottom micro">BLACK. GREEN. UNMISTAKABLE.</span><span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span><span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span></div>
+        <div class="pack-carousel reveal" aria-roledescription="carousel" aria-label="Featured Monster flavors">
+          <div class="carousel-top micro"><span id="carousel-category">THE ORIGINAL</span><span id="carousel-number">01 / 03</span></div>
+          <div class="carousel-stage"><span class="carousel-word display" aria-hidden="true" id="carousel-word">OG</span><img id="carousel-can" src="assets/original.png" alt="Monster Energy Original Green" width="250" height="625" loading="lazy"><button class="carousel-arrow prev" id="prev-product" aria-label="Previous flavor">←</button><button class="carousel-arrow next" id="next-product" aria-label="Next flavor">→</button></div>
+          <div class="carousel-bottom"><div><h3 id="carousel-title">ORIGINAL GREEN</h3><span class="carousel-dots" role="group" aria-label="Choose flavor"><button class="active" data-slide="0" aria-label="Original Green" aria-pressed="true"></button><button data-slide="1" aria-label="Zero Sugar" aria-pressed="false"></button><button data-slide="2" aria-label="Ultra Paradise" aria-pressed="false"></button></span></div><button class="pill-button" id="add-carousel">ADD TO MY PACK <span>+</span></button></div>
+          <span class="rivet rivet-tl"></span><span class="rivet rivet-tr"></span><span class="rivet rivet-bl"></span><span class="rivet rivet-br"></span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <svg class="scallop scallop-top" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true"><path d="M0 130A90 120 0 0 1 180 130A90 120 0 0 1 360 130A90 120 0 0 1 540 130A90 120 0 0 1 720 130A90 120 0 0 1 900 130A90 120 0 0 1 1080 130A90 120 0 0 1 1260 130A90 120 0 0 1 1440 130V150H0Z"/></svg>
+      <div class="footer-top micro"><a href="#origin">BACK TO THE TOP ↑</a><span>03 / BEAST MODE</span><a href="https://www.monsterenergy.com/en-us/" target="_blank" rel="noopener">MONSTERENERGY.COM ↗</a></div>
+      <div class="footer-center"><span class="claw footer-claw"><img src="assets/monster-logo.png" alt="" width="802" height="363" loading="lazy"></span><h2 class="display">BEAST ACTIVATED.</h2><a class="pill-button dark" href="#flavors">FIND YOUR MONSTER <span>↗</span></a></div>
+      <div class="footer-word display" aria-hidden="true">MONSTER</div>
+      <div class="footer-bottom"><span>UNLEASH THE BEAST.</span><span>INDEPENDENT DESIGN CONCEPT BY DEVONIX</span><span>MONSTER ENERGY®</span></div>
+    </footer>
+  </main>
+
+  <dialog class="menu-dialog" id="menu-dialog" aria-labelledby="menu-title">
+    <div class="dialog-top"><span id="menu-title" class="micro">UNLEASH THE BEAST.</span><button class="close-button" data-close="menu-dialog" aria-label="Close menu">×</button></div>
+    <nav class="menu-nav" aria-label="Main navigation"><a href="#origin"><span>01</span>THE ORIGINAL<em>↗</em></a><a href="#flavors"><span>02</span>THE FLAVORS<em>↗</em></a><a href="#world"><span>03</span>THE WORLD<em>↗</em></a><a href="#pack"><span>04</span>YOUR PACK<em>↗</em></a></nav>
+    <div class="menu-bottom micro"><span>THE BLACK CAN. THE GREEN CLAW.</span><a href="https://www.monsterenergy.com/en-us/" target="_blank" rel="noopener">VISIT MONSTER ↗</a></div>
+  </dialog>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-title">
+    <button class="close-button" data-close="product-dialog" aria-label="Close product details">×</button>
+    <div class="product-dialog-art"><span class="micro" id="product-category">THE ORIGINAL</span><img id="product-image" src="assets/original.png" alt="Monster Energy Original Green" width="250" height="625"><span class="product-dialog-word display" id="product-short" aria-hidden="true">OG</span></div>
+    <div class="product-dialog-copy"><p class="micro">MONSTER ENERGY / 16 FL OZ</p><h2 class="display" id="product-title">ORIGINAL GREEN</h2><p id="product-description"></p><dl class="product-specs"><div><dt>CAFFEINE</dt><dd id="product-caffeine">160 MG</dd></div><div><dt>CALORIES</dt><dd id="product-calories">230</dd></div><div><dt>CAN SIZE</dt><dd>16 FL OZ</dd></div></dl><p class="product-flavor" id="product-flavor"></p><button class="pill-button" id="add-product">ADD TO MY PACK <span>+</span></button><a class="text-link" id="official-product" href="https://www.monsterenergy.com/en-us/energy-drinks/monster-energy/original-green/" target="_blank" rel="noopener">OFFICIAL PRODUCT DETAILS <span>↗</span></a><p class="product-footnote">Product facts for the U.S. 16 fl oz can.</p></div>
+  </dialog>
+
+  <dialog class="bag-dialog" id="bag-dialog" aria-labelledby="bag-title">
+    <div class="dialog-top"><h2 class="display" id="bag-title">MY PACK.</h2><button class="close-button" data-close="bag-dialog" aria-label="Close my pack">×</button></div>
+    <p class="bag-intro">Keep your favorite flavors together.</p><div id="bag-items"></div><div class="bag-summary"><span>TOTAL CANS</span><strong id="bag-total">0</strong></div><a class="pill-button" href="https://www.monsterenergy.com/en-us/where-to-buy/" target="_blank" rel="noopener">FIND A RETAILER <span>↗</span></a><p class="bag-footnote">Your pack is a saved flavor list. Availability and purchases are handled by retailers.</p><button class="text-link" id="clear-pack">CLEAR MY PACK <span>×</span></button>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><style>.loader{display:none}.hero-scroll{height:100svh}.hero-product,.fact-orbit,.keep-going{display:none}.world-scroll{height:110svh}.photo-card{transform:none;opacity:1}.photo-one{left:8%;top:48%}.photo-two{left:37%;top:58%}.photo-three{left:64%;top:43%}</style></noscript>
+</body>
+</html>
